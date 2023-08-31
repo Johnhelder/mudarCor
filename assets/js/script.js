@@ -1,11 +1,13 @@
-const cores = ['Red', 'Blue', 'Yellow', 'Purple', 'Green'];
+const cores = ['Red', 'Blue', 'Yellow', 'Black', 'Purple', 'Green'];
 
 const btn = document.getElementById('btn');
+const color = document.querySelector('.color');
 
 btn.addEventListener('click', function(){
-  document.body.style.background = cores[3];
   const randomColor = getRandomColor();
-  console.log(randomColor);
+  document.body.style.background = cores[randomColor];
+  // console.log(randomColor);
+  color.textContent = cores[randomColor];
 })
 
 function getRandomColor(){
