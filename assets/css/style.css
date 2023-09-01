@@ -85,7 +85,16 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+  background-color: #222; 
+  color: #fff;
+  width: 530px;
+  display: flex;
+  margin: auto;
+  text-align: center; 
+  height: 140px;  
 }
+
+ 
 h2 {
   font-size: 2rem;
 }
